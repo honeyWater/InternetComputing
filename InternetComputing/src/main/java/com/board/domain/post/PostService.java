@@ -3,13 +3,14 @@ package com.board.domain.post;
 import java.util.Collections;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Service;
 
 import com.board.common.dto.SearchDto;
 import com.board.paging.Pagination;
 import com.board.paging.PagingResponse;
 
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 @Service
