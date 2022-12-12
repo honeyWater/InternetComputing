@@ -50,7 +50,7 @@ public class PostController {
 	public String openPostList(@ModelAttribute("params") final SearchDto params, Model model) throws Exception {
 		PagingResponse<PostResponse> response = postService.findAllPost(params);
 		model.addAttribute("response", response);
-		return "post/list";
+		return "/post/list";
 	}
 
 	// 게시글 상세 내용 페이지
