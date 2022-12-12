@@ -26,7 +26,7 @@ public class PostService {
 	 * @return Generated PK
 	 */
 	@Transactional
-	public Long savePost(final PostRequest params) throws Exception {
+	public Long savePost(final PostRequest params) {
 		postMapper.save(params);
 		return params.getId();
 	}
@@ -37,7 +37,7 @@ public class PostService {
 	 * @param id - PK
 	 * @return 게시글 상세 정보
 	 */
-	public PostResponse findPostById(final Long id) throws Exception {
+	public PostResponse findPostById(final Long id) {
 		return postMapper.findById(id);
 	}
 
@@ -48,7 +48,7 @@ public class PostService {
 	 * @return PK
 	 */
 	@Transactional
-	public Long updatePost(final PostRequest params) throws Exception {
+	public Long updatePost(final PostRequest params) {
 		postMapper.update(params);
 		return params.getId();
 	}
@@ -59,7 +59,7 @@ public class PostService {
 	 * @param id - PK
 	 * @return PK
 	 */
-	public Long deletePost(final Long id) throws Exception {
+	public Long deletePost(final Long id) {
 		postMapper.deleteById(id);
 		return id;
 	}
@@ -70,7 +70,7 @@ public class PostService {
 	 * @param params - search conditions
 	 * @return list & pagination information
 	 */
-	public PagingResponse<PostResponse> findAllPost(final SearchDto params) throws Exception {
+	public PagingResponse<PostResponse> findAllPost(final SearchDto params) {
 
 		int count = postMapper.count(params);
 		if (count < 1) {
