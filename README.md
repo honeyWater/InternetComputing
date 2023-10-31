@@ -27,14 +27,18 @@
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/15f6f080-4ff7-4139-bd11-d1259de8634f)
 PostController – openPostList
 
+
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/22ad3def-c9b8-4aff-a97f-9f825b17a3df)
 PostService – findAllPost
+
 
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/0f2ef83b-ab4f-4aa5-a155-a95111effb45)
 PostMapper – findAll 와 count 메소드
 
+
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/9db38119-1d9f-4ca1-9f5b-107de6077e94)
 실질적으로 데이터를 가져오는 xml 구문 (PostMapper.xml)
+
  
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/120eac74-21cd-4022-bdf9-ab821aff34b5)
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/7358e698-b37c-4e3a-87ca-ce65b786aaf9)
