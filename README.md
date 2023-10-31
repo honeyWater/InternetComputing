@@ -1,8 +1,10 @@
 # InternetComputing
 인터넷 컴퓨팅 프로젝트 과제 배포를 위한 repository
 
+
 1. 웹 서버 환경
 제가 사용한 웹 서버는 안전하고 크기 조정이 가능한 컴퓨팅 용량을 클라우드에서 제공하는 웹 서비스인 AWS의 EC2(Elastic Compute Cloud)입니다.
+
 
 
 2. 외부 접속 Domain Name / ip:port
@@ -11,6 +13,7 @@
 링트 2: http://aws-public-DNS:8080/post/list.do 
 
 -> 지금은 닫아놓은 상태입니다.
+
 
 
 3.	웹 페이지 작성에 대한 설명 및 중요 코드
@@ -22,7 +25,8 @@
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/c273beb6-50f3-4d0d-be18-a3fba1d1f933)
 
 프로젝트는 Controller에서 Get 혹은 Post 방식으로 요청 받은 링크에 따라서 해당 Controller를 실행하게 되고 내부적으로 DB와의 연동을 통해 데이터를 Model에 담고 View(html)로 뿌려주는 방식입니다.
- 
+
+ 
 3-1. 게시글 리스트 페이지와 관련된 코드
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/15f6f080-4ff7-4139-bd11-d1259de8634f)
 PostController – openPostList
@@ -48,9 +52,12 @@ Controller에서 최종적으로 반환하는 list.html의 일부
 -	게시글에 대한 기본적인 CRUD와 페이지네이션 기능을 합니다. 각 페이지 버튼을 누르면 해당 페이지의 게시글이 출력되며, ‘>’, ‘<’ 버튼을 누르면 1, 11, 21 등 그 다음과 이전의 1페이지가 출력되고 ‘<<’, ‘>>’ 버튼을 누르면 맨 앞 페이지와 맨 뒤 페이지로 이동합니다.
 
 
+
 4. 개인적 소감 / 어려웠던 점 및 해결 과정
+
 4-1. 개인적 소감
 프로젝트 관련 경험이 많지 않아서 헤매기도 했지만, 결국 해결해 나가면서 좋은 경험이 될 수 있었던 프로젝트 였다고 생각합니다. 프로젝트를 만드는 것 조차 쉽지 않은 일이지만 웹 서버를 구축해 보는 것도 정말 좋은 경험입니다. 구글링을 한다고 해서 모든 것이 나와 있는 대로 되지는 않는데, 프로그램 별로 호환되는 버전, 내가 작성한 코드의 오류 등을 해결하는 능력도 나름 상승한 것 같은 기분입니다. 한 학기 동안 이 프로젝트를 경험하게 돼서 좋았습니다. 사실 후배들이 다른 과목에서도 이런 프로젝트를 할 일이 많았으면 하는 바램입니다.
+
 
 4-2. 어려웠던 점 및 해결 과정
 -	처음에 회원가입, 로그인 관련해서 시도하려고 했으나 spring boot 버전과 spring security 버전 사이에 의존성이 맞지 않아 다른 방법을 찾다가 결국 security를 이용한 회원가입 및 로그인은 포기하게 되었습니다.
@@ -62,6 +69,7 @@ Controller에서 최종적으로 반환하는 list.html의 일부
 	Spring boot의 application.properties 파일에서
 	Logging.level.org.springframework = debug 와
 	Logging.level.org.springframework.web = debug를 추가한 뒤 프로젝트를 실행하니 basic.html 파일의 구문 중 경로 지정이 잘못됐다는 것을 알게 되었습니다. ‘/’ 하나를 빼고 나니 실행되는 것을 보고 참 많은 감정이 오가는 순간이였습니다..
+
 
 
 5. 클론코딩한 사이트
