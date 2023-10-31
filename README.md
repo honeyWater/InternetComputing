@@ -18,32 +18,33 @@ InternetComputing
 -	프로젝트의 각 설정은 XML 설정을 대신해서 자바(JAVA) 기반의 설정을 사용했습니다.
 -	데이터베이스는 MySQL을 사용했습니다.
 -	퍼시스턴스 프레임워크로는 마이바티스(MyBatis)를 사용했습니다.
-개발을 진행하는 데 있어 필수적인 설정들의 처리가 되어있거나, 간편하게 설정이 가능하기에 비즈니스 로직 작성에 더욱 집중할 수 있는 환경을 제공해 주는 Spring Boot를 사용하였습니다. 제 프로젝트의 패키지 구조는 다음과 같습니다.
+
+- 개발을 진행하는 데 있어 필수적인 설정들의 처리가 되어있거나, 간편하게 설정이 가능하기에 비즈니스 로직 작성에 더욱 집중할 수 있는 환경을 제공해 주는 Spring Boot를 사용하였습니다. 제 프로젝트의 패키지 구조는 다음과 같습니다.
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/c273beb6-50f3-4d0d-be18-a3fba1d1f933)
 
-프로젝트는 Controller에서 Get 혹은 Post 방식으로 요청 받은 링크에 따라서 해당 Controller를 실행하게 되고 내부적으로 DB와의 연동을 통해 데이터를 Model에 담고 View(html)로 뿌려주는 방식입니다.
+- 프로젝트는 Controller에서 Get 혹은 Post 방식으로 요청 받은 링크에 따라서 해당 Controller를 실행하게 되고 내부적으로 DB와의 연동을 통해 데이터를 Model에 담고 View(html)로 뿌려주는 방식입니다.
 
  
 3-1. 게시글 리스트 페이지와 관련된 코드
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/15f6f080-4ff7-4139-bd11-d1259de8634f)
-PostController – openPostList
+<PostController – openPostList>
 
 
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/22ad3def-c9b8-4aff-a97f-9f825b17a3df)
-PostService – findAllPost
+<PostService – findAllPost>
 
 
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/0f2ef83b-ab4f-4aa5-a155-a95111effb45)
-PostMapper – findAll 와 count 메소드
+<PostMapper – findAll 와 count 메소드>
 
 
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/9db38119-1d9f-4ca1-9f5b-107de6077e94)
-실질적으로 데이터를 가져오는 xml 구문 (PostMapper.xml)
+<실질적으로 데이터를 가져오는 xml 구문 (PostMapper.xml)>
 
  
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/120eac74-21cd-4022-bdf9-ab821aff34b5)
 ![image](https://github.com/honeyWater/InternetComputing/assets/99648793/7358e698-b37c-4e3a-87ca-ce65b786aaf9)
-Controller에서 최종적으로 반환하는 list.html의 일부
+<Controller에서 최종적으로 반환하는 list.html의 일부>
 
 -	프로젝트의 방식은 전체적으로 위와 비슷한 맥락입니다.
 -	게시글에 대한 기본적인 CRUD와 페이지네이션 기능을 합니다. 각 페이지 버튼을 누르면 해당 페이지의 게시글이 출력되며, ‘>’, ‘<’ 버튼을 누르면 1, 11, 21 등 그 다음과 이전의 1페이지가 출력되고 ‘<<’, ‘>>’ 버튼을 누르면 맨 앞 페이지와 맨 뒤 페이지로 이동합니다.
