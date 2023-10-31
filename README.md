@@ -67,6 +67,6 @@ InternetComputing
 	Logging.level.org.springframework.web = debug를 추가한 뒤 프로젝트를 실행하니 basic.html 파일의 구문 중 경로 지정이 잘못됐다는 것을 알게 되었습니다. ‘/’ 하나를 빼고 나니 실행되는 것을 보고 참 많은 감정이 오가는 순간이였습니다..
 --------------------------------------------
 5. 클론코딩한 사이트
-https://congsong.tistory.com/13
+- https://congsong.tistory.com/13
 
--> 원래는 구성이 MySQL이였으나, 현재는 MariaDB로 바뀐 상태입니다. 위 사이트 외에 클론하면서 발생했던 문제는 따로 찾아보면서 해결했습니다.
+- 원래는 구성이 MySQL이였으나, 현재는 MariaDB로 바뀐 상태입니다. 위 사이트 외에 클론하면서 발생했던 문제는 따로 찾아보면서 해결했습니다.
