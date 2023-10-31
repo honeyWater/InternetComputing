@@ -11,7 +11,7 @@ InternetComputing
 링크 1: http://aws-public-ip:8080/post/list.do 
 링트 2: http://aws-public-DNS:8080/post/list.do 
 
--> 지금은 닫아놓은 상태입니다.
+- 지금은 닫아놓은 상태입니다.
 --------------------------------------------
 3.	웹 페이지 작성에 대한 설명 및 중요 코드
 -	화면 처리는 JSP를 대신해서 HTML5 기반의 자바 템플릿 엔진인 타임리프(Thymeleaf)를 사용했습니다.
