@@ -1,6 +1,6 @@
 # InternetComputing
 인터넷 컴퓨팅 프로젝트 과제 배포를 위한 repository
-
+-
 
 1. 웹 서버 환경
 제가 사용한 웹 서버는 안전하고 크기 조정이 가능한 컴퓨팅 용량을 클라우드에서 제공하는 웹 서비스인 AWS의 EC2(Elastic Compute Cloud)입니다.
